@@ -2,10 +2,19 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
+    "allowJs": true,
+    "outDir": "./dit",
+    "rootDir": "./src",
+    "strict": true,
+    "baseUrl": "./src",
     "noEmit": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@services/*": ["./services/*"]
+    }
+  },
+  "include": ["src"]
 }
